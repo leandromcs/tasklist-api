@@ -17,6 +17,9 @@ public class TaskDTO {
 
     private String descricao;
 
+    public TaskDTO() {
+    }
+
     public TaskDTO(Long id, String titulo, Boolean status, String descricao) {
         this.id = id;
         this.titulo = titulo;
