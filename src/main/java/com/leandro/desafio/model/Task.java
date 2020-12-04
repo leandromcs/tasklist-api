@@ -15,12 +15,13 @@ public class Task {
     private Long id;
 
     @NotNull
-    @Size(min = 5)
+    @Size(min = 1, max = 128)
     private String titulo;
 
     @NotNull
     private Boolean status;
 
+    @Size(max = 255)
     private String descricao;
 
     public Long getId() {
